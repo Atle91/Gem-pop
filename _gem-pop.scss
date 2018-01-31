@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Patrick+Hand+SC');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+.gem-pop-container{
+	display:flex;
+	flex-direction:column;
+	margin:auto;
+	cursor: pointer;
+}
+.row{
+}
+.gem{
+	float:right;
+}
+.gem-clicked{
+}
+
+.red-gem{
+	background-image: url(../images/gems/red.png);
+}
+.green-gem{
+	background-image: url(../images/gems/green.png);
+}
+.blue-gem{
+	background-image: url(../images/gems/blue.png);
+}
+.orange-gem{
+	background-image: url(../images/gems/orange.png);
+}
+.yellow-gem{
+	background-image: url(../images/gems/yellow.png);
+}
+.purple-gem{
+	background-image: url(../images/gems/purple.png);
+}
+.pink-gem{
+	background-image: url(../images/gems/pink.png);
+}
+.teal-gem{
+	background-image: url(../images/gems/teal.png);
+}
+
+
+.selected-red-gem{
+	background-image:  url(../images/gems/select.png), url(../images/gems/red.png);
+}
+.selected-green-gem{
+	background-image:  url(../images/gems/select.png), url(../images/gems/green.png);
+}
+.selected-blue-gem{
+	background-image:  url(../images/gems/select.png), url(../images/gems/blue.png);
+}
+.selected-orange-gem{
+	background-image:  url(../images/gems/select.png), url(../images/gems/orange.png);
+}
+.selected-yellow-gem{
+	background-image:  url(../images/gems/select.png), url(../images/gems/yellow.png);
+}
+.selected-purple-gem{
+	background-image:  url(../images/gems/select.png), url(../images/gems/purple.png);
+}
+.selected-pink-gem{
+	background-image:  url(../images/gems/select.png), url(../images/gems/pink.png);
+}
+.selected-teal-gem{
+	background-image:  url(../images/gems/select.png), url(../images/gems/teal.png);
+}
+.re{
+	opacity:0;
+}
+
+
+.gem-pop-wrapper{
+	position: absolute;
+	top: 70px;
+	left:50%;
+	transform:translate(-50%, 0);
+}
+.moves, .level{
+	display: inline-block;
+	margin: auto;
+	font-family: Oswald;
+	background: none;
+	color:hsl(111, 42%, 63%);
+	text-align: center;
+	font-size: 22px;
+	@media #{$phone-max}{
+		font-size: 15px;
+	}
+}
+.score-container{
+	border: 2px solid white;
+	margin: auto;
+	margin-top: 25px;
+	width: 300px;
+}
+.gem-score{
+	font-family: Patrick Hand SC;
+	color:yellow;
+	text-align: center;
+	font-size: 34px;
+	width:300px;
+	margin-top: -48px;
+	border-radius: 5px;
+			@media #{$phone-max}{
+			font-size: 34px;
+		}
+}
+.score-bar{
+	margin-top: -1px;
+	height:50px;
+	width:0px;
+	background: hsl(147, 31%, 66%);
+}
+.moves, .moves-text{
+	position:absolute;
+	left:50%;
+	transform: translate(-50%, 0);
+}
+.moves-text{
+	transform:translate(-150%, 0);
+}
+
+.lost-container{
+	display:none;
+	position: absolute;
+	left: 50%;
+	top: 40%;
+	background: hsla(1, 0%, 12%, 0.86);
+	border-radius: 6px;
+	padding: 10px;
+	transform:translate(-50%, 0);
+	text-align: center;
+}
+.lost{
+	font-family: Raleway;
+	font-size: 41px;
+	font-weight: bold;
+	color: red;
+
+	
+}
+.reset-game{
+	margin-top: 50px;
+	font-family: Raleway;
+	background: none;
+	outline: none;
+	border: none;
+	color:white;
+	font-size: 27px;
+	cursor: pointer;
+}
+.reset-game:hover{
+	color:yellow;
+}
+
+.level{
+	margin-left: 7px;
+	float:left;
+	color:white;
+}
+@media (max-width: 700px){
+
+
+}
